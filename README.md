@@ -1,94 +1,17 @@
-<div align="center">
+# About JASON LEUNG
 
-  # Chirpy Jekyll Theme
+JASON LEUNG is a highly skilled technical professional with extensive experience in designing and developing complex enterprise systems for internal and external use. With a deep understanding of the latest technologies and best practices, he is able to architect solutions that meet the unique needs of each organization he works with.
 
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+With 15+ years of experience, his expertise spans the entire software development lifecycle, from requirements gathering to deployment and ongoing maintenance. His expertise encompasses the full range of development activities, including architecture and design, coding, testing, and deployment. He is also highly collaborative, working closely with stakeholders and team members to ensure the final product meets all requirements. He has a keen eye for detail and is able to identify potential roadblocks early in the development process, saving time and money down the line. His track record of delivering high-quality, scalable systems has earned him a reputation as a go-to technical expert in the field.
 
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
-  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
+Specialties:<br>
+✅ Coding: C#, T-SQL, NodeJS, NustJS, NestJS<br>
+✅ System Design: Docker-based Microservices Architecture, API and Integration<br>
+✅ Blockchain: Hyperledge Besu, ERC-20 Smart Contract, Web3<br>
+✅ Containerisation: Docker, Docker Compose, Docker Swarm, Kubernetes<br>
+✅ Certified Kubernetes Administrator (CKA)<br>
+✅ Certified Kubernetes Security Specialist (CKS)<br>
 
-  [**Live Demo →**][demo]
+He is eager to connect with diverse professionals across various industries and disciplines. He is particularly interested in building relationships with technology leaders, as exchanging ideas and knowledge can lead to exciting new possibilities and innovations in the field.
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
-
-</div>
-
-## Features
-
-<details>
-  <summary>
-    <i>Click to view features</i>
-  </summary>
-  <p>
-
-  - Dark / Light Theme Mode
-  - Localized UI language
-  - Pinned Posts
-  - Hierarchical Categories
-  - Trending Tags
-  - Table of Contents
-  - Last Modified Date of Posts
-  - Syntax Highlighting
-  - Mathematical Expressions
-  - Mermaid Diagram & Flowchart
-  - Dark / Light Mode Images
-  - Embed Videos
-  - Disqus / Utterances / Giscus Comments
-  - Search
-  - Atom Feeds
-  - Google Analytics
-  - SEO & Performance Optimization
-
-  </p>
-</details>
-
-## Documentation
-
-To explore usage, development, and upgrade guide of the project, please refer to
-the [Wiki][wiki].
-
-## Contributing
-
-Welcome to report bugs, help improve the code or submit new features.
-For more information, please see the ["Contributing Guidelines"][contribute-guide].
-
-## Credits
-
-This theme is mainly built with [Jekyll][jekyllrb] ecosystem,
-[Bootstrap][bootstrap], [Font Awesome][icons] and some other [wonderful tools][lib].
-The avatar and favicon design come from [Clipart Max][image].
-
-Thanks to all the [contributors][contributors]. Also, folks who submitted issues
-or unmerged PRs should not be forgotten. Because they reported bugs, shared ideas,
-or inspired me to write more readable documentation.
-
-Last but not least, thanks to [JetBrains][jetbrains] for providing the
-_Open Source Development_ license.
-
-## Sponsoring
-
-If you'd like to sponsor this project, the following options are available.
-
-[![Ko-fi](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/coteschung)
-[![Wechat Pay](https://img.shields.io/badge/-Tip%20Me%20on%20WeChat-brightgreen?logo=wechat&logoColor=white)][donation]
-[![Alipay](https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&logoColor=white)][donation]
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[jekyllrb]: https://jekyllrb.com/
-[bootstrap]: https://getbootstrap.com/
-[icons]: https://fontawesome.com/
-[image]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
-[demo]: https://cotes2020.github.io/chirpy-demo/
-[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
-[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/CONTRIBUTING.md
-[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
-[lib]: https://github.com/cotes2020/chirpy-static-assets
-[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
-[donation]: https://sponsor.cotes.page/
-[mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+Please reach out to connect with me via [**Linkedin**](https://www.linkedin.com/in/jasonlws).
