@@ -5,9 +5,8 @@ last_modified_at : 2023-09-01 00:00:00 -0500
 categories: [Cheat Sheet]
 tags: [Docker Compose, Cheat Sheet]
 pin: true
-math: true
-mermaid: true
-img_path: /public/images/20230301/
+math: false
+mermaid: false
 style: sheet
 ---
 

@@ -7,6 +7,7 @@ tags: [DotNet, API Versioning]
 pin: true
 math: false
 mermaid: false
+img_path: /public/images/20230823-dotnetapiversioning/
 ---
 
 Our API is pretty functional at the moment, but it may evolve in the future, so we might have changes that are not backwards compatible. So we need different API version. 
@@ -143,10 +144,10 @@ public class ApiVersionController : ControllerBase
 
 3: Test it via Postman
 
-![Query String Versioning Version 2.0](../../public/images/20230823-dotnetapiversioning/query-string-versioning-v2.png)
+![Query String Versioning Version 2.0](query-string-versioning-v2.png)
 *Query String Versioning Version 2.0*
 
-![Query String Versioning Default Version](../../public/images/20230823-dotnetapiversioning/query-string-versioning-default.png)
+![Query String Versioning Default Version](query-string-versioning-default.png)
 *Query String Versioning Default Version*
 
 ### HTTP Header Versioning
@@ -205,10 +206,10 @@ public class ApiVersionController : ControllerBase
 
 3: Test it via Postman
 
-![HTTP Header Versioning Version 2.0](../../public/images/20230823-dotnetapiversioning/http-header-versioning-v2.png)
+![HTTP Header Versioning Version 2.0](http-header-versioning-v2.png)
 *HTTP Header Versioning Version 2.0*
 
-![HTTP Header Versioning Default Version](../../public/images/20230823-dotnetapiversioning/http-header-versioning-default.png)
+![HTTP Header Versioning Default Version](http-header-versioning-default.png)
 *HTTP Header Versioning Default Version*
 
 ### Media Type Versioning
@@ -268,10 +269,10 @@ public class ApiVersionController : ControllerBase
 
 3: Test it via Postman
 
-![Media Type Versioning Version 2.0](../../public/images/20230823-dotnetapiversioning/media-type-versioning-v2.png)
+![Media Type Versioning Version 2.0](media-type-versioning-v2.png)
 *Media Type Versioning Version 2.0*
 
-![Media Type Versioning Default Version](../../public/images/20230823-dotnetapiversioning/media-type-versioning-default.png)
+![Media Type Versioning Default Version](media-type-versioning-default.png)
 *Media Type Versioning Default Version*
 
 ### URL Versioning
@@ -329,10 +330,10 @@ public class ApiVersionController : ControllerBase
 
 3: Test it via Postman
 
-![Url Versioning Version 1.0](../../public/images/20230823-dotnetapiversioning/url-versioning-v1.png)
+![Url Versioning Version 1.0](url-versioning-v1.png)
 *Url Versioning Version 1.0*
 
-![Url Versioning Version 2.0](../../public/images/20230823-dotnetapiversioning/url-versioning-v2.png)
+![Url Versioning Version 2.0](url-versioning-v2.png)
 *Url Versioning Version 2.0*
 
 ### Report the service API version compatibility information in responses
@@ -358,7 +359,7 @@ builder.Services.AddApiVersioning(options =>
 
 3: Test it via Postman
 
-![Report API version compatibility information](../../public/images/20230823-dotnetapiversioning/report-api-version-information.png)
+![Report API version compatibility information](report-api-version-information.png)
 *Report API version compatibility information*
 
 ## About Myself

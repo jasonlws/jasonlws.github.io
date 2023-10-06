@@ -5,8 +5,8 @@ last_modified_at : 2023-07-28 00:00:00 -0500
 categories: [Cheat Sheet]
 tags: [Git, Cheat Sheet]
 pin: true
-math: true
-mermaid: true
+math: false
+mermaid: false
 ---
 
 > Git is the free and open source distributed version control system that's responsible for everything GitHub related that happens locally on your computer. This cheat sheet features the most important and commonly used Git commands for easy reference.
