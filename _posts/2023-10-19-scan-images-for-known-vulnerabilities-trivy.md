@@ -69,9 +69,13 @@ sudo apt-get install trivy
 
 Try to scan my container image from Dockerhub - [jasonlws/alpine-curl:latest](https://hub.docker.com/r/jasonlws/alpine-curl)
 
+Input
 ```bash
-$ trivy image jasonlws/alpine-curl:latest
+trivy image jasonlws/alpine-curl:latest
+```
 
+Output
+```bash
 2023-10-19T11:05:26.838-0400    INFO    Need to update DB
 2023-10-19T11:05:26.838-0400    INFO    DB Repository: ghcr.io/aquasecurity/trivy-db
 2023-10-19T11:05:26.839-0400    INFO    Downloading DB...
@@ -120,9 +124,13 @@ According to the above report, all vulnerabilities should be fixed with latest v
 
 ### Rescan
 
+Input
 ```bash
-$ trivy image jasonlws/alpine-curl:latest
+trivy image jasonlws/alpine-curl:latest
+```
 
+Output
+```bash
 2023-10-19T13:15:09.743-0400    INFO    Vulnerability scanning is enabled
 2023-10-19T13:15:09.743-0400    INFO    Secret scanning is enabled
 2023-10-19T13:15:09.743-0400    INFO    If your scanning is slow, please try '--scanners vuln' to disable secret scanning
@@ -144,9 +152,13 @@ Good ! All severity vulnerabilities are gone.
 
 By adding `--severity` to severities of security issues to be displayed (UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL):
 
+Input
 ``` bash
-$ trivy image --severity HIGH,CRITICAL jasonlws/alpine-curl:latest
+trivy image --severity HIGH,CRITICAL jasonlws/alpine-curl:latest
+```
 
+Output
+```bash
 2023-10-19T13:45:15.821-0400    INFO    Vulnerability scanning is enabled
 2023-10-19T13:45:15.822-0400    INFO    Secret scanning is enabled
 2023-10-19T13:45:15.822-0400    INFO    If your scanning is slow, please try '--scanners vuln' to disable secret scanning
@@ -164,9 +176,13 @@ Total: 0 (HIGH: 0, CRITICAL: 0)
 
 Two pods created in `jasonlws` namespace. `jasonlws1` pod with `jasonlws/alpine-curl:latest` image and `jasonlws2` pod with `jasonlws/alpine-curl:3.15.10` image.
 
+Input
 ```bash
-$ kubectl get pod --namespace jasonlws --output custom-columns=POD-NAME:.metadata.name,IMAGE-NAME:.spec.containers[*].image
+kubectl get pod --namespace jasonlws --output custom-columns=POD-NAME:.metadata.name,IMAGE-NAME:.spec.containers[*].image
+```
 
+Output
+```bash
 POD-NAME    IMAGE-NAME
 jasonlws1   jasonlws/alpine-curl:latest
 jasonlws2   jasonlws/alpine-curl:3.15.10
@@ -174,9 +190,13 @@ jasonlws2   jasonlws/alpine-curl:3.15.10
 
 Run follow command to retrieve the result - namespace: `jasonlws` and image with `High` or `Critical` severity vulnerabilities.
 
+Input
 ```bash
-$ for i in `kubectl get pod --namespace jasonlws --no-headers --output custom-columns=IMAGE-NAME:.spec.containers[*].image`; do trivy -q image --severity HIGH,CRITICAL $i | grep -iEB3 "HIGH:|CRITICAL:" ; done
+for i in `kubectl get pod --namespace jasonlws --no-headers --output custom-columns=IMAGE-NAME:.spec.containers[*].image`; do trivy -q image --severity HIGH,CRITICAL $i | grep -iEB3 "HIGH:|CRITICAL:" ; done
+```
 
+Output
+```bash
 jasonlws/alpine-curl:3.15.10 (alpine 3.15.10)
 =============================================
 Total: 3 (HIGH: 3, CRITICAL: 0)
