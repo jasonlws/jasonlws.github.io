@@ -7,10 +7,12 @@ tags: [k8s, kubernetes, kubernetes security ]
 pin: true
 math: false
 mermaid: false
-image: 1-trivy.jpg
+feature_image: /public/images/2023-10-19-scan-images-for-known-vulnerabilities-trivy/1-trivy.jpg
 img_path: /public/images/2023-10-19-scan-images-for-known-vulnerabilities-trivy
 style: sheet
 ---
+
+![1-trivy](1-trivy.jpg)
 
 ## About Trivy
 
