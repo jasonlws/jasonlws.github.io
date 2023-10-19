@@ -11,6 +11,8 @@ img_path: /public/images/2023-10-19-scan-images-for-known-vulnerabilities-trivy
 style: sheet
 ---
 
+![trivy](trivy.jpg)
+
 ## About Trivy
 
 Trivy is a comprehensive and versatile security scanner. Trivy has scanners that look for security issues, and targets where it can find those issues.
