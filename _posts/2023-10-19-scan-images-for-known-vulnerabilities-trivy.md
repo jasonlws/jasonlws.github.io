@@ -11,7 +11,7 @@ img_path: /public/images/2023-10-19-scan-images-for-known-vulnerabilities-trivy
 style: sheet
 ---
 
-![trivy](trivy.jpg)
+![1-trivy](1-trivy.jpg)
 
 ## About Trivy
 
@@ -119,10 +119,10 @@ Total: 5 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 3, CRITICAL: 0)
 According to the above report, all vulnerabilities should be fixed with latest version of library. So, let rebuild and publish the image with latest version of alpine and apply `apk upgrade` to update latest packages.
 
 **Before rebuild and publish**
-![jasonlws-alpine-curl-latest-20231006](jasonlws-alpine-curl-latest-20231006.jpg)
+![2-jasonlws-alpine-curl-latest-20231006](2-jasonlws-alpine-curl-latest-20231006.jpg)
 
 **After rebuild and publish**
-![jasonlws-alpine-curl-latest-20231019](jasonlws-alpine-curl-latest-20231019.jpg)
+![3-jasonlws-alpine-curl-latest-20231019](3-jasonlws-alpine-curl-latest-20231019.jpg)
 
 ### Rescan
 
