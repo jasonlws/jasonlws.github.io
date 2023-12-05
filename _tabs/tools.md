@@ -12,14 +12,26 @@ order: 5
     Find:&nbsp;<input type="text" id="searchfor">&nbsp;Replace:&nbsp;<input type="text" id="replacewith">&nbsp;<span class="btn btn-outline-primary" id="replace">Replace</span>
 </p>
 <p>
-    Add Enter After:&nbsp;<input type="text" id="searchforaddenter">&nbsp;<span class="btn btn-outline-primary" id="addenter">Add Enter</span>
+    Before:&nbsp;<input type="text" id="searchforbeforeaddenter">&nbsp; After:&nbsp;<input type="text" id="searchforafteraddenter">&nbsp;<span class="btn btn-outline-primary" id="addenter">Add Enter</span>
 </p>
 <p>
-    <span class="btn btn-outline-primary" id="addenterbeforeuppercase">Add Enter Before Uppercase</span>
-    <span class="btn btn-outline-primary" id="removeextraspaces">Remove Extra Spaces</span>
-    <span class="btn btn-outline-primary" id="removeenter">Remove Enter</span>
+    <span class="btn btn-outline-warning" id="addenterbeforeuppercase">Add Enter Before Uppercase</span>
+    <span class="btn btn-outline-warning" id="addenterafterfullstop">Add Enter After Full Stop</span>
+</p>
+<p>
+    <span class="btn btn-outline-info" id="removeextraspaces">Remove Extra Spaces</span>
+    <span class="btn btn-outline-info" id="removeextraenter">Remove Extra Enter</span>
+    <span class="btn btn-outline-info" id="removeenter">Remove Enter</span>
+</p>
+<p>
+    <span class="btn btn-outline-warning" id="addenterbeforebulletpoint">Add Enter Before Bullet Point</span>
+    <span class="btn btn-outline-info" id="removebulletpoint">Remove Bullet Point</span>
+    Bullet Points include [ • ‣ ⁃ ⁌ ⁍ ∙ ○ ● ◘ ◦ ☙ ❥ ❧ ⦾ ⦿ ◉ ]
 </p>
 <p>
     <span class="btn btn-outline-success" id="copy">Copy to Clipboard</span>&nbsp;
     <span class="btn btn-outline-danger" id="clear">Clear</span>
 </p>
+
+
+
