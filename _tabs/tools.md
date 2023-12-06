@@ -7,7 +7,7 @@ order: 5
 ## Text Processing
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script  src="../public/javascript/main.js"></script>
-<textarea id="content" name="content" rows="20" cols="100"></textarea><br/>
+<textarea id="content" name="content" rows="20" style="white-space: nowrap; overflow-x: auto; width: 100%"></textarea><br/>
 <p>
     Find:&nbsp;<input type="text" id="searchfor">&nbsp;Replace:&nbsp;<input type="text" id="replacewith">&nbsp;<span class="btn btn-outline-primary" id="replace">Replace</span>
 </p>
