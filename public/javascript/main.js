@@ -1,5 +1,7 @@
 $(document).ready(function () { 
 
+    var bulletpoints = ["•", "‣", "⁃", "⁌", "⁍", "∙", "○", "●", "◘", "◦", "☙", "❥", "❧", "⦾", "⦿", "◉"];
+
     $("#replace").click(function (d) {
         d.preventDefault();
         var content = $("#content").val();
@@ -37,22 +39,9 @@ $(document).ready(function () {
     $("#addenterbeforebulletpoint").click(function (d) {
         d.preventDefault();
         var content = $("#content").val();
-        content = content.replaceAll("•", "\n•");
-        content = content.replaceAll("‣", "\n‣");
-        content = content.replaceAll("⁃", "\n⁃");
-        content = content.replaceAll("⁌", "\n⁌");
-        content = content.replaceAll("⁍", "\n⁍");
-        content = content.replaceAll("∙", "\n∙");
-        content = content.replaceAll("○", "\n○");
-        content = content.replaceAll("●", "\n●");
-        content = content.replaceAll("◘", "\n◘");
-        content = content.replaceAll("◦", "\n◦");
-        content = content.replaceAll("☙", "\☙n");
-        content = content.replaceAll("❥", "\❥n");
-        content = content.replaceAll("❧", "\❧n");
-        content = content.replaceAll("⦾", "\n⦾");
-        content = content.replaceAll("⦿", "\n⦿");
-        content = content.replaceAll("◉", "\n◉");
+        bulletpoints.forEach(function(bulletpoint){
+            content = content.replaceAll(bulletpoint, "\n"+bulletpoint);
+        });
         content = $.map(content.split("\n"), $.trim).join("\n");
         $("#content").val(content.trim());
     });
@@ -68,22 +57,12 @@ $(document).ready(function () {
     $("#removebulletpoint").click(function (d) {
         d.preventDefault();
         var content = $("#content").val();
-        content = content.replaceAll("•", "");
-        content = content.replaceAll("‣", "");
-        content = content.replaceAll("⁃", "");
-        content = content.replaceAll("⁌", "");
-        content = content.replaceAll("⁍", "");
-        content = content.replaceAll("∙", "");
-        content = content.replaceAll("○", "");
-        content = content.replaceAll("●", "");
-        content = content.replaceAll("◘", "");
-        content = content.replaceAll("◦", "");
-        content = content.replaceAll("☙", "");
-        content = content.replaceAll("❥", "");
-        content = content.replaceAll("❧", "");
-        content = content.replaceAll("⦾", "");
-        content = content.replaceAll("⦿", "");
-        content = content.replaceAll("◉", "");
+        bulletpoints.forEach(function(bulletpoint){
+            content = content.replaceAll(bulletpoint, "");
+        });
+        bulletpoints.forEach(function(bulletpoint){
+            content = content.replaceAll(bulletpoint, "");
+        });
         content = $.map(content.split("\n"), $.trim).join("\n");
         $("#content").val(content);
     });
@@ -91,21 +70,29 @@ $(document).ready(function () {
     $("#removeextraspaces").click(function (d) {
         d.preventDefault();
         var content = $("#content").val();
-        content = content.replace(/\s+/g, ' ').trim();
+        content = content.replace(/[ \t]{1,}/g, ' ')
         $("#content").val(content);
     });
 
-    $("#removeextraenter").click(function (d) {
+    $("#removeemptyline").click(function (d) {
         d.preventDefault();
         var content = $("#content").val();
-        content = content.replace(/(\r\n|\n|\r)+/gm, "\n");
+        content = content.replace(/^\s*$(?:\r\n?|\n)/gm, "");
+        content = $.map(content.split("\n"), $.trim).join("\n");
         $("#content").val(content);
     });
 
     $("#removeenter").click(function (d) {
         d.preventDefault();
         var content = $("#content").val();
-        content = content.replace(/(\r\n|\n|\r)/gm, " ");
+        content = content.replace(/(\r\n|\n|\r)/gm, " ").trim();
+        $("#content").val(content);
+    });
+
+    $("#sort").click(function (d) {
+        d.preventDefault();
+        var content = $("#content").val();
+        content = $.map(content.split("\n"), $.trim).sort().join("\n");
         $("#content").val(content);
     });
 

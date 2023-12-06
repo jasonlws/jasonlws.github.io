@@ -20,13 +20,16 @@ order: 5
 </p>
 <p>
     <span class="btn btn-outline-info" id="removeextraspaces">Remove Extra Spaces</span>
-    <span class="btn btn-outline-info" id="removeextraenter">Remove Extra Enter</span>
+    <span class="btn btn-outline-info" id="removeemptyline">Remove Empty Line</span>
     <span class="btn btn-outline-info" id="removeenter">Remove Enter</span>
 </p>
 <p>
     <span class="btn btn-outline-warning" id="addenterbeforebulletpoint">Add Enter Before Bullet Point</span>
     <span class="btn btn-outline-info" id="removebulletpoint">Remove Bullet Point</span>
     Bullet Points include [ • ‣ ⁃ ⁌ ⁍ ∙ ○ ● ◘ ◦ ☙ ❥ ❧ ⦾ ⦿ ◉ ]
+</p>
+<p>
+    <span class="btn btn-outline-info" id="sort">Sort</span>
 </p>
 <p>
     <span class="btn btn-outline-success" id="copy">Copy to Clipboard</span>&nbsp;
