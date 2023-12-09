@@ -9,6 +9,21 @@ order: 5
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" defer></script>
 <script  src="../public/javascript/main.js"></script>
+<script>
+    $(document).ready(
+    
+        function () {
+            $("#addenterafterfullstops").click(function (d) {
+                d.preventDefault();
+                console.log("a");
+                var content = $("#content").val();
+                content = content.replaceAll(".", ".\n");
+                content = $.map(content.split("\n"), $.trim).join("\n");
+                $("#content").val(content);
+            });
+        }
+    );
+</script>
 <style type="text/css">
     #actiontable {
         width: 100%;
@@ -75,7 +90,7 @@ order: 5
         <td>
             <ul id="actions">
                 <li class="default">Add Enter After&nbsp;<input type="text" id="searchforafteraddenter" size="2"><span class="btn btn-outline-success actionbutton" id="addenterafter"><i class="fa-solid fa-square-plus"></i></span></li>
-                <li class="default">Add Enter After Full Stop<span class="btn btn-outline-success actionbutton" id="addenterafterfullstop"><i class="fa-solid fa-square-plus"></i></span></li>
+                <li class="default">Add Enter After Full Stop<span class="btn btn-outline-success actionbutton" id="addenterafterfullstops"><i class="fa-solid fa-square-plus"></i></span></li>
                 <li class="default">Add Enter Before&nbsp;<input type="text" id="searchforbeforeaddenter" size="2"><span class="btn btn-outline-success actionbutton" id="addenterbefore"><i class="fa-solid fa-square-plus"></i></span></li>
                 <li class="default">Add Enter Before Bullet Point<span class="btn btn-outline-success actionbutton" id="addenterbeforebulletpoint"><i class="fa-solid fa-square-plus"></i></span></li>
                 <li class="default">Add Enter Before Uppercase<span class="btn btn-outline-success actionbutton" id="addenterbeforeuppercase"><i class="fa-solid fa-square-plus"></i></span></li>
