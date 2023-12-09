@@ -60,7 +60,7 @@ order: 5
     }
 </style>
 <p>
-    <textarea id="content" name="content" rows="20" style="white-space: nowrap; overflow-x: auto; width: 100%"></textarea><br/>
+    <textarea id="content" name="content" rows="20" style="overflow-x: auto; width: 100%"></textarea><br/>
     Bullet Points include [ • ‣ ⁃ ⁌ ⁍ ∙ ○ ● ◘ ◦ ☙ ❥ ❧ ⦾ ⦿ ◉ ]
 </p>
 <table id="actiontable" cellpadding="0" cellspacing="0">
