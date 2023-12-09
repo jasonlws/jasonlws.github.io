@@ -11,8 +11,8 @@ $(document).ready(
         }
 
         const fn_addenterafterfullstop = function(content) {
-            content = content.replaceAll(".", ".\n");
-            content = $.map(content.split("\n"), $.trim).join("\n");
+            content = content.replaceAll(".", ".\r\n");
+            content = $.map(content.split("\r\n"), $.trim).join("\r\n");
             return content;
         }
 
