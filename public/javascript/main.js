@@ -232,7 +232,7 @@ $(document).ready(
                 } else if (actiontype[0] == "sort") {
                     content = fn_sort(content);
                 } 
-                $("#content").val(content);
+                document.querySelector("#content").value = content;
             });
         });
 
